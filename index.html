@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<center>
+		<head>
+			<meta charset="utf-8">
+			<title>Dibujando con las flechas</title>
+		</head>
+		<body>
+			<P>
+				Este es tu dibujo con las flechas de teclado
+			</p>
+			<p>
+				Elige XY
+				<input type="number" value="30" min="10" max="630" style="width: 40px;" id="xandy">
+			</p>
+			<p>
+				Elije un color 
+				<input type="color" value="#0091ff" id="color-line" style="width: 25px; border: 5px;" > 
+			</p>
+			<p>
+				Grosor de la linea
+				<input type="number" value="3" id="thickness-number" min="1" max="150" style="width: 40px;">
+			</p>
+			<p>
+				Elige cunatos pixeles quieres saltar
+				<input type="number" value="10" id="number-pixel" min="1" max="100" style="width: 40px;">
+			</p>
+			<p>
+				<input type="button" value="Limpiar" id="clear">
+				<input type="button" value="Aplicar Cambios" id="aplly-changes">
+			</p>
+			<canvas width="630" height="630" id="drawing-area" style="background-image: url(/img/Cuadricula.png);border: 4px solid rgb(0, 0, 0)"> </canvas>
+			<script src="events.js"></script>
+		</body>
+	</center>
+</html>
